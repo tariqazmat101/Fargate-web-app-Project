@@ -48,14 +48,14 @@ We are running the web app on AWS Fargate. AWS Fargate is a managed service that
 
 4. You will need to validate your email address before deploying the Cloudformation template. 
 
-`aws ses verify-email-identity --email-address sender@example.com
-`
- 5. Create a Self-signed certificate from this article and copy the ACM ARN. The ACM ARN should like this, "arn:aws:iam::746109777700:server-certificate/CSC" We need to use this self-signed certificate to attach it to our load balancer for SSL support. 
-"
-  https://medium.com/@francisyzy/create-aws-elb-with-self-signed-ssl-cert-cd1c352331f
+`aws ses verify-email-identity --email-address sender@example.com`
+
+ 5. Create a Self-signed certificate from this article and copy the ACM ARN. The ACM ARN should like this:
+  `arn:aws:iam::746109777700:server-certificate/CSC`
  
-.
-       
+ We need to use this self-signed certificate to attach it to our load balancer for SSL support. 
+
+  https://medium.com/@francisyzy/create-aws-elb-with-self-signed-ssl-cert-cd1c352331f
 
 
 #### Requirments Answers:
