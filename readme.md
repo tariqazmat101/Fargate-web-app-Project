@@ -4,8 +4,6 @@ Preface
 
 This repository contains solutions for an AWS university assignment. The main task is to deploy a simple web app with an autoscaling group and load balancer and codify the solution using IAC. 
 
-Please check out the updated branch of this repository to view an improved version of the Cloudformation template. 
-
 
 Questions 
 ----
