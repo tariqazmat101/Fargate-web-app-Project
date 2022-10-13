@@ -29,7 +29,7 @@ Answers
 Below is a list of answers to this assignment. 
 
 ### Introduction
-We are running the web app on AWS Fargate. AWS Fargate is a managed service that allows you to quickly run containerized workloads in the cloud. Developers only have to upload their container to the service and aws will take care of maintaining the underlying server. (security updates, patching, and so on).
+We are running the web app on AWS Fargate. AWS Fargate is a managed service that allows you to quickly run containerized workloads in the cloud. Developers only have to upload their container to the service and AWS will take care of maintaining the underlying server that the container runs on. (security updates, patching, and so on).
 
   
 ### Instructions
@@ -79,7 +79,7 @@ There are many ways to automate deploying code updates to this environment. For 
 
 I would use AWS Codepipeline to update the application, this is an AWS service that encompasses 3 services; (Code commit, code deploy, and code build). 
 
-#### How would a ci/cd pipeline look for this? 
+#### How would a CI/CD pipeline look for this? 
 Because the code is packaged inside a Docker container, I would first:
 1. Push the local code out to a Github repository
 2. Have Github Webhooks enabled so that Codepipeline knows when new code has been checked into the Repository. 
